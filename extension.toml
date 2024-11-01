@@ -1,0 +1,7 @@
+id = "hare"
+name = "Hare"
+version = "0.0.1"
+schema_version = 1
+authors = ["xdBronch <51252236+xdBronch@users.noreply.github.com>"]
+description = "Hare support for Zed"
+repository = "https://github.com/xdBronch/hare-zed"

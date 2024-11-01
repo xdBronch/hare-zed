@@ -5,3 +5,6 @@
 
 (type_declaration
   "type" (identifier) @name "=" (_) @context) @item
+
+(field
+  (identifier) @name) @item

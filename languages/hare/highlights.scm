@@ -83,7 +83,6 @@
   "@fini"
   "@init"
   "@test"
-  "@noreturn"
   "@packed"
   (declaration_attribute)
 ] @attribute
@@ -135,7 +134,7 @@
   . (identifier) @property)
 
 (field_assignment
-  . (identifier) @field)
+  . (identifier) @property)
 
 ; Repeats
 

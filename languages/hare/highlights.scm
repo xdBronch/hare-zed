@@ -23,7 +23,7 @@
 
 [
   "use"
-] @include
+] @keyword.include
 
 (use_statement
   (scoped_type_identifier
@@ -103,7 +103,7 @@
 
 (call_expression
   . (scoped_type_identifier
-    . (identifier) . "::" . (identifier) @method.call))
+    . (identifier) . "::" . (identifier) @function.call))
 
 ((call_expression
   . (identifier) @function.builtin)
@@ -128,11 +128,11 @@
 ; Fields
 
 ((member_expression
-  "." (_) @field)
+  "." (_) @property)
   (#set! "priority" 105))
 
 (field
-  . (identifier) @field)
+  . (identifier) @property)
 
 (field_assignment
   . (identifier) @field)
@@ -141,7 +141,7 @@
 
 [
   "for"
-] @repeat
+] @keyword.repeat
 
 ; Conditionals
 
@@ -152,7 +152,7 @@
   "switch"
   "match"
   "case"
-] @conditional
+] @keyword.conditional
 
 ; Operators
 
@@ -193,6 +193,7 @@
   "^^="
   "="
   "?"
+  "=>"
 ] @operator
 
 ; Punctuation
@@ -221,7 +222,6 @@
   ":"
   ";"
   "::"
-  "=>"
 ] @punctuation.delimiter
 
 ; Literals
@@ -237,7 +237,7 @@
 
 (number) @number
 
-(float) @float
+(float) @number
 
 (boolean) @boolean
 
@@ -248,7 +248,7 @@
 
 ; Comments
 
-(comment) @comment @spell
+(comment) @comment
 
 ; Errors
 

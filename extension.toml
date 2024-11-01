@@ -5,3 +5,7 @@ schema_version = 1
 authors = ["xdBronch <51252236+xdBronch@users.noreply.github.com>"]
 description = "Hare support for Zed"
 repository = "https://github.com/xdBronch/hare-zed"
+
+[grammars.hare]
+repository = "https://github.com/tree-sitter-grammars/tree-sitter-hare"
+commit = "4af5d82cf9ec39f67cb1db5b7a9269d337406592"

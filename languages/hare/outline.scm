@@ -4,7 +4,8 @@
   name: (_) @name) @item
 
 (type_declaration
-  "type" (identifier) @name "=" (_) @context) @item
+  (identifier) @name 
+  (_) @context) @item
 
 (field
   (identifier) @name) @item

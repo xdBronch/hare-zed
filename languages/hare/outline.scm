@@ -4,8 +4,21 @@
   name: (_) @name) @item
 
 (type_declaration
-  (identifier) @name 
-  (_) @context) @item
+  "type" @context
+  (identifier) @name) @item
 
 (field
   (identifier) @name) @item
+
+(constant_declaration
+  "def" @context
+  (identifier) @context
+  ":" (_)? @context
+  "=" (_)) @item
+
+(global_declaration
+  "let" @context
+  (global_binding
+    (identifier) @context
+    ":" (_)? @context
+    "=" (_))) @item

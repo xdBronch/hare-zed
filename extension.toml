@@ -1,10 +1,14 @@
 id = "hare"
 name = "Hare"
-version = "0.0.1"
+version = "0.2.0"
 schema_version = 1
 authors = ["xdBronch <51252236+xdBronch@users.noreply.github.com>"]
 description = "Hare support for Zed"
 repository = "https://github.com/xdBronch/hare-zed"
+
+[language_servers.hare-lsp]
+name = "hare-lsp"
+language = "Hare"
 
 [grammars.hare]
 repository = "https://github.com/tree-sitter-grammars/tree-sitter-hare"
